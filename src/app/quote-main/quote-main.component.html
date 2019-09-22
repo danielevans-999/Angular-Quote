@@ -1,7 +1,7 @@
 <!-- <p>quote-main works!</p> -->
 <div class="row">
-    <div class="col-md-6">
-        <div  class="card mt-3" *ngFor='let quote of quotes;let i = index'>
+    <div  id="col1" class="col-md-6">
+        <div class="card mt-3" *ngFor='let quote of quotes;let i = index'>
             <div class="card-header text-center">posted by: {{quote.name}}</div>
             <div class="card-body">
                 {{quote.quote}}
@@ -13,7 +13,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6">
+    <div id="col2" class="col-md-6">
         <app-quote-form (addQuote)="addNewQuote($event)" ></app-quote-form>
     </div>
 </div>
