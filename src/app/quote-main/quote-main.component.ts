@@ -47,6 +47,7 @@ export class QuoteMainComponent implements OnInit {
   addNewQuote(dan) {
     // quote.elapse = new Date(quote.elapse)
     this.quotes.push(dan);
+   
   }
   addVote(dan, index) {
     if (dan) {
