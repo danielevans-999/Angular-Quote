@@ -2,24 +2,18 @@
 <div class="row">
     <div class="col-md-6">
         <div class="card mt-3" *ngFor='let quote of quotes;let i = index'>
-            <div class="card-header text-center">posted by: {{quote.submitter}}</div>
+            <div class="card-header text-center">posted by: {{quote.name}}</div>
             <div class="card-body">
-                “It is Satan's constant effort to misrepresent the character of God, the nature of sin, and the real
-                issues at
-                stake in the great controversy. His sophistry lessens the obligation of the divine law and gives men
-                license to
-                sin. At the same time he causes them to cherish false conceptions of God so that they regard Him with
-                fear and
-                hate rather than with love. The cruelty inherent in his own character is attributed to the Creator; it
-                is
-                embodied in systems of religion and expressed in modes of worship.”
-                ― Ellen G. White, Great Controversy: Between Christ and Satan
+                {{quote.quote}}
             </div>
             <div class="card-footer">
                 <button class="btn btn-sm btn-info mr-4" (click)='seeDetails(i)'>more</button>
-                <app-quote-detail *ngIf='quote.viewDetails' [quote]='quote' (isDone)='purgeQuote($event,i)'></app-quote-detail>
+                <app-quote-detail *ngIf='quote.viewDetails' [quote]='quote' (isDone)='purgeQuote($event,i)'>
+                </app-quote-detail>
             </div>
         </div>
     </div>
-    <div class="col-md-6"><app-quote-form></app-quote-form></div>
+    <div class="col-md-6">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
 </div>

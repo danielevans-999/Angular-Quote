@@ -9,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class QuoteMainComponent implements OnInit {
   
   quotes:Quote[]=[
-    new Quote('daniel','Isaac newton','I can calculate the motion of heavenly bodies, but not the madness of people.',0,0),
-    new Quote('titus','Albert Einstein','Imagination is more important than knowledge.',0,0),
-    new Quote('steve','Ellen White','The words of the Bible, and the Bible alone, should be heard from the pulpit.',0,0)
+     new Quote('daniel','Isaac newton','I can calculate the motion of heavenly bodies, but not the madness of people.',0,0,new Date(2018,5,1)),
+     new Quote('titus','Albert Einstein','Imagination is more important than knowledge.',0,0,new Date(2018,5,1)),
+     new Quote('steve','Ellen White','The words of the Bible, and the Bible alone, should be heard from the pulpit.',0,0,new Date(2018,5,1))
   
   ];
   seeDetails(index){
@@ -25,6 +25,10 @@ export class QuoteMainComponent implements OnInit {
       }
     }
     
+  }
+  addNewQuote(dan){
+    // quote.elapse = new Date(quote.elapse)
+    this.quotes.push(dan);
   }
 
   constructor() { }
