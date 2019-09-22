@@ -1,14 +1,14 @@
 <!-- <p>quote-form works!</p> -->
 
 <h4>Create a Quote</h4>
-<form>
+<form #quoteForm='ngForm'>
     <div class="form-group">
         <label for="Name">Name</label>
-        <input type="text" required class="form-control" id="name">
+        <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name">
     </div>
     <div class="form-group">
         <label for="Author">Author</label>
-        <input type="text" required class="form-control">
+        <input type="text" required class="form-control" [(ngModel)]='newQuote.author' name='author'>
     </div>
     <div class="form-group">
         <label for="quote">Quote</label>
