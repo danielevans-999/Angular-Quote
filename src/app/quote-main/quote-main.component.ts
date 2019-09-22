@@ -53,7 +53,11 @@ export class QuoteMainComponent implements OnInit {
       this.quotes[index].upvote+=1;
     }
   }
-
+lessVote(dan,index){
+  if(dan){
+    this.quotes[index].downvote+=1
+  }
+}
   constructor() {}
 
   ngOnInit() {}
