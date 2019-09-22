@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { QuoteMainComponent } from './quote-main/quote-main.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { HighestvoteDirective } from './highestvote.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteMainComponent,
     QuoteDetailComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    HighestvoteDirective
   ],
   imports: [
     BrowserModule,
