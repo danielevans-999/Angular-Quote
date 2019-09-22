@@ -12,6 +12,11 @@ export class QuoteDetailComponent implements OnInit {
   @Output() isDone = new EventEmitter<boolean>();
 
   @Output () voteIncreese = new EventEmitter<boolean>();
+  @Output () voteDecrease = new EventEmitter<boolean>();
+
+  fnDecrease(two:boolean){
+    this.voteDecrease.emit(two);
+  }
 
   fnIncrease(one:boolean){
     this.voteIncreese.emit(one);
