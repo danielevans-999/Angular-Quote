@@ -1,3 +1,4 @@
+
 import { Quote } from "../quote";
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 
@@ -9,6 +10,12 @@ import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 export class QuoteDetailComponent implements OnInit {
   @Input() quote: Quote;
   @Output() isDone = new EventEmitter<boolean>();
+
+  @Output () voteIncreese = new EventEmitter<boolean>();
+
+  fnIncrease(one:boolean){
+    this.voteIncreese.emit(one);
+  }
   quoteDan(purge: boolean) {
     this.isDone.emit(purge);
   }
