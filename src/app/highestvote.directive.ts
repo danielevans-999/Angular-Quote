@@ -6,6 +6,7 @@ import { Directive,ElementRef} from '@angular/core';
 export class HighestvoteDirective {
 
   constructor(private elem:ElementRef) {
+    this.elem.nativeElement.style.backgroundColor='khaki';
 
 
    }

@@ -1,27 +1,44 @@
-# Quotes
+#  POSTING QUOTE 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+Quote Website where one can add a quote and post it and people can like them.
 
-## Development server
+### Author
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ Daniel Evans Karani
 
-## Code scaffolding
+ # Behaviour Driven Development(BDD)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  
+| Behaviour             | Input          | Output                  |
+| -------------         |:-------------: | -----------------------:|
+| Log in the website    | Enter your quote| Your quote get posted  |
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Installing 
 
-## Running unit tests
+To view the website go to [click here](https://github.com/danielevans-999/Angular-Quote)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Step 1: Clone this repo :git clone (https://github.com/danielevans-999/Angular-Quote)
 
-## Running end-to-end tests
+- step 2: Open the repo using your text editor e.g atom or code
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- step 3:Traverse through the folder using the terminal 
 
-## Further help
+# Technologies Used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Angular HTML:Templates-used for creating markup pages  and user interface
+
+- Bootstrap-Library for CSS
+
+- Custom CSS-used to style the markup pages
+
+-Typescript for Logic and DOM manipulation.
+
+## Support and contact details
+The application is an open-source product if you  want to improve it.
+### License
+>You can check out the license [click here](https://choosealicense.com/licenses/mit/)
+This project is licensed under the terms of **MIT**
+
+Copyright (c) 2019 **Daniel Evans Karani**
+  
