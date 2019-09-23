@@ -8,6 +8,7 @@ import { QuoteMainComponent } from './quote-main/quote-main.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HighestvoteDirective } from './highestvote.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HighestvoteDirective } from './highestvote.directive';
     QuoteMainComponent,
     QuoteDetailComponent,
     QuoteFormComponent,
-    HighestvoteDirective
+    HighestvoteDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

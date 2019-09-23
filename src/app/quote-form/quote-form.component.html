@@ -1,7 +1,7 @@
 <!-- <p>quote-form works!</p> -->
 
 <h4 id="head" class="text-center text-white">Create a Quote</h4>
-<form (ngSubmit)=submitQuote() #quoteForm='ngForm'>
+<form (ngSubmit)="submitQuote() ;quoteForm.resetForm({})" #quoteForm='ngForm'>
     <div class="form-group">
         <label for="Name">Name</label>
         <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel'>
